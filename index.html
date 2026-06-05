@@ -5,6 +5,42 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
+
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<!-- Custom CSS Override -->
+	<style>
+		#footer .split.contact {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			flex-wrap: nowrap;
+			align-items: flex-start;
+			padding: 2em;
+		}
+		#footer .split.contact > section {
+			display: flex;
+			flex-direction: column;
+			width: auto;
+			min-width: 180px;
+			border-top: none;
+			border-left: solid 1px rgba(210, 210, 210, 0.35);
+			padding: 1em 2em;
+		}
+		#footer .split.contact > section.alt {
+			border-left: none;
+		}
+		#footer .split.contact > section h3 {
+			margin-bottom: 0.3em;
+		}
+		#footer .split.contact > section p,
+		#footer .split.contact > section a {
+			white-space: nowrap;
+			margin: 0;
+		}
+	</style>
+
 	<head>
 		<title>Dennis Aningu Portfolio</title>
 		<meta charset="utf-8" />
@@ -50,31 +86,50 @@
 					<div id="main">
 
 						<!-- Featured Post -->
+						 	<!-- RETAIL SALES PERFORMANCE BI DASHBOARD -->
 							<article class="post featured">
 								<header class="major">
-									<h2><a href="https://github.com/NjiruDennis/healthcare-claims-analytics">HEALTHCARE INSURANCE CLAIMS ANALYTICS<br />
+									<h2><a href="https://github.com/NjiruDennis/retail-sales-bi">RETAIL SALES PERFORMANCE BI DASHBOARD<br />
 									</a></h2>
-									<p>Utilizing <span style="font-weight: bold; color: #0078D4;">SQL for data cleaning and advanced analysis</span>, 
+									<p>Utilizing <span style="font-weight: bold; color: #0078D4;">PostgreSQL for star schema design and advanced analysis</span>, 
 													<span style="font-weight: bold; color: #0078D4;">Python for exploratory data analysis</span>, and 
 													<span style="font-weight: bold; color: #0078D4;">Tableau for visualization</span>, 
-										this project delivers an end-to-end analysis of 54,860 healthcare insurance claims worth $1.4 billion. <br />
-										It identifies cost drivers, flags billing anomalies, benchmarks insurer performance, and tracks admission trends across 5 insurance providers and 6 medical conditions.</p>
+										this project delivers an end-to-end business intelligence solution analysing 51,290 retail order lines across 147 countries worth $12.6M in sales. <br />
+										It uncovers market performance, product profitability, customer RFM segmentation, and the precise impact of discounting, revealing that any discount above 20% destroys profitability, costing the business $814K in losses.</p>
 								</header>
-								<a href="https://github.com/NjiruDennis/healthcare-claims-analytics" class="image main"><img src="images/Healthcare-Data-Analytics.jpg" alt="" /></a>
+								<a href="https://github.com/NjiruDennis/retail-sales-bi" class="image main"><img src="images/Green Stock Chart.jpg" alt="" /></a>
 								<ul class="actions special">
-									<li><a href="https://github.com/NjiruDennis/healthcare-claims-analytics" class="button large">View Project</a></li>
+									<li><a href="https://github.com/NjiruDennis/retail-sales-bi" class="button large">View Project</a></li>
 								</ul>
 							</article>
 
 						<!-- Posts -->
+
+						<!-- Healthcare Insurance Claims Analytics -->
 							<section class="posts">
+								<article>
+									<header>
+										<h2><a href="https://github.com/NjiruDennis/healthcare-claims-analytics">HEALTHCARE INSURANCE CLAIMS ANALYTICS<br />
+											</a></h2>
+											<p>Leveraging <span style="font-weight: bold; color: #0078D4;">SQL for data cleaning and advanced analysis</span>, 
+													<span style="font-weight: bold; color: #0078D4;">Python for exploratory data analysis</span>, and 
+													<span style="font-weight: bold; color: #0078D4;">Tableau for visualization</span>, 
+										this project delivers an end-to-end analysis of 54,860 healthcare insurance claims worth $1.4 billion. <br />
+										It identifies cost drivers, flags billing anomalies, benchmarks insurer performance, and tracks admission trends across 5 insurance providers and 6 medical conditions.</p>
+									</header>
+									<a href="https://github.com/NjiruDennis/healthcare-claims-analytics" class="image main"><img src="images/Healthcare-Data-Analytics.jpg" alt="" /></a>
+									<ul class="actions special">
+										<li><a href="https://github.com/NjiruDennis/healthcare-claims-analytics" class="button large">View Project</a></li>
+									</ul>
+								</article>
+
+						 <!-- Human Resources Report -->
 								<article>
 									<header>
 										<h2><a href="https://github.com/NjiruDennis/HR-Dashboard_Report-MySQL-PowerBI">Human Resources Report<br />
 											</a></h2>
-											<p>Utilizing <span style="font-weight: bold; color: #0078D4;">SQL for data cleaning and analysis</span>, and <span style="font-weight: bold; color: #0078D4;">Power BI for visualization</span>, this project provides insights into employee distribution, demographics, and trends within a human resources department. <br />
+											<p>Combining <span style="font-weight: bold; color: #0078D4;">SQL for data cleaning and analysis</span>, and <span style="font-weight: bold; color: #0078D4;">Power BI for visualization</span>, this project provides insights into employee distribution, demographics, and trends within a human resources department. <br />
 										It covers key metrics such as employee turnover, gender distribution, tenure, and location analysis, empowering HR departments to make data-driven decisions.</p>
-								</header>
 									</header>
 									<a href="https://github.com/NjiruDennis/HR-Dashboard_Report-MySQL-PowerBI" class="image main"><img src="images/HR.jpg" alt="" /></a>
 									<ul class="actions special">
@@ -82,11 +137,12 @@
 									</ul>
 								</article>
 
+								<!-- Covid-19 Global Tableau Dashboard -->
 								<article>
 									<header>
-										<h2><a href="https://public.tableau.com/app/profile/dennis.aningu/viz/CovidDashboard_17358872309140/Dashboard1">COVID-19 GLOBAL DATA DASHBOARD<br />
+										<h2><a href="https://public.tableau.com/app/profile/dennis.aningu/viz/CovidDashboard_17358872309140/Dashboard1">COVID-19 GLOBAL DATA TABLEAU DASHBOARD<br />
 										</a></h2>
-										<p>Utilizing <span style="font-weight: bold; color: #0078D4;">Tableau for data visualization</span>, this project explores global Covid-19 data covering 150 million cases and 3.1 million deaths across all continents.<br />
+										<p>Powered by <span style="font-weight: bold; color: #0078D4;">Tableau</span>, this project explores global Covid-19 data covering 150 million cases and 3.1 million deaths across all continents.<br />
 											It tracks total cases, death rates, continent-level mortality, and percent population infected per country, with forecast trend lines showing projected infection trajectories across key nations.</p>
 									</header>
 									<a href="https://public.tableau.com/app/profile/dennis.aningu/viz/CovidDashboard_17358872309140/Dashboard1" class="image fit"><img src="images/Covid19-Dashboard.png" alt="" /></a>
@@ -95,11 +151,12 @@
 									</ul>
 								</article>
 
+							<!-- HR Analytics Dashboard -->
 								<article>
 									<header>
 										<h2><a href="https://github.com/NjiruDennis/HR-Analytics-Dashboard-Power-Bi-Project">HR ANALYTICS DASHBOARD<br />
 											</a></h2>
-											<p>Utilizing <span style="font-weight: bold; color: #0078D4;">Power Query for data cleaning and transformation</span> and <span style="font-weight: bold; color: #0078D4;">Power BI for visualization</span> , this project analyses employee attrition across departments, salary levels, job roles, and experience within a 1,417-employee organisation. <br />
+											<p>Using <span style="font-weight: bold; color: #0078D4;">Power Query for data cleaning and transformation</span> and <span style="font-weight: bold; color: #0078D4;">Power BI for visualization</span> , this project analyses employee attrition across departments, salary levels, job roles, and experience within a 1,417-employee organisation. <br />
 												It uncovers key attrition drivers, including a 16.3% overall attrition rate and a spike in early-tenure exits, empowering HR teams to make data-driven retention decisions.</p>
 									</header>
 									<a href="https://github.com/NjiruDennis/HR-Analytics-Dashboard-Power-Bi-Project" class="image fit"><img src="images/HR-Dashboard.jpg" alt="" /></a>
@@ -108,6 +165,7 @@
 									</ul>
 								</article>
 								
+							<!-- Sales Analysis Report with Excel -->
 								<article>
 									<header>
 										<h2><a href="https://github.com/NjiruDennis/Motorcycle_Parts_Sales_Excel_Dashboard">Sales Analysis Report<br />
@@ -121,40 +179,39 @@
 										<li><a href="https://github.com/NjiruDennis/Motorcycle_Parts_Sales_Excel_Dashboard" class="button">View Project</a></li>
 									</ul>
 								</article>
-						
-					
 
-		<!-- Footer -->
+							</section>
+					</div>
+
+				<!-- Footer -->
 				<footer id="footer">
-
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>Nairobi, Kenya<br />
-								</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(254) 705-516916</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">njirudennis15@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/dennisnjiru/" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
-									<li><a href="https://github.com/NjiruDennis" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
+					<section class="split contact">
+						<section class="alt">
+							<h3>Address</h3>
+							<p>Nairobi, Kenya</p>
 						</section>
-					</footer>
+						<section>
+							<h3>Phone</h3>
+							<p><a href="tel:+254705516916">(254) 705-516916</a></p>
+						</section>
+						<section>
+							<h3>Email</h3>
+							<p><a href="mailto:njirudennis15@gmail.com">njirudennis15@gmail.com</a></p>
+						</section>
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.linkedin.com/in/dennisnjiru/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/NjiruDennis" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
 
 				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+				<div id="copyright">
+					<ul><li>&copy; Dennis Njiru Aningu</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+				</div>
 
 			</div>
 
